@@ -11,8 +11,8 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.tg</groupId>
-	<artifactId>orderService</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>order-service</artifactId>
+	<version>0.0.1</version>
 	<name>orderService</name>
 	<description>Demo project for Spring Boot</description>
 	<url />
