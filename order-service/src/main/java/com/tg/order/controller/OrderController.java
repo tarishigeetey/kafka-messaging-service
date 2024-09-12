@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.tg.order.model.Order;
 import com.tg.order.service.OrderProducer;
 
@@ -16,9 +17,9 @@ public class OrderController {
     private OrderProducer orderProducer;
 
     @PostMapping("/create")
-    public String createOrder(@RequestBody Order order) {
+    public void createOrder(@RequestBody Order order) throws JsonProcessingException {
         orderProducer.sendOrder(order);
-        return "Order placed successfully!";
+        System.out.println("Order placed successfully!");
     }
 }
 
