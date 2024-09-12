@@ -92,7 +92,7 @@ Set Body:
     ```bash
     {
     "orderId" : "12380",
-    "customerEmail" : "tgeetey@gmail.com",
+    "customerEmail" : "example@email.com",
     "orderDetails" : "Product XYZ"
     }
     ```
