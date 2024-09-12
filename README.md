@@ -53,7 +53,7 @@ The **notification-service** is a microservice that consumes Kafka messages from
 Start Zookeeper: 
 ```bash
 zookeeper-server-start.bat config/zookeeper.properties
-
+```
 Start Kafka:
 kafka-server-start.bat config/server.properties
 
