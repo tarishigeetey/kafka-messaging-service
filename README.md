@@ -55,8 +55,9 @@ Start Zookeeper:
 zookeeper-server-start.bat config/zookeeper.properties
 ```
 Start Kafka:
+```bash
 kafka-server-start.bat config/server.properties
-
+```
 **Running the Services Locally**
     1. Clone the Repository
     2. Build and Run Order Service
@@ -64,11 +65,15 @@ kafka-server-start.bat config/server.properties
 
 **Kafka Topics Setup**
 1. Create a Kafka Topic for Orders:
+   ```bash
    kafka-topics.bat --create --topic <topic-name> --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1 
    (for our project topic-name is order-topic)
+   ```
 
 3. List Kafka Topics to Verify:
+   ```bash
    kafka-topics.bat --list --bootstrap-server localhost:9092
+   ```
 
 ### Note: 
 **Run the commands with location of kafka like cd C:\kafka\ or cd C:\kafka\bin**
@@ -84,12 +89,13 @@ Set Headers (if required):
 Set Body:
     Select raw and JSON format.
     Enter the JSON payload for the order:
+    ```bash
     {
     "orderId" : "12380",
     "customerEmail" : "tgeetey@gmail.com",
     "orderDetails" : "Product XYZ"
     }
+    ```
+    **Check Logs for services to check on the workflow.**
 
-    Check Logs for services to check on the workflow.
-
-    Feel free to adjust URLs and other details based on your specific setup and requirements, I will try to add integration tests if required. If you have any more questions or need further adjustments, let me know!
+Feel free to adjust URLs and other details based on your specific setup and requirements, I will try to add integration tests if required. If you have any more questions or need further adjustments, let me know!
